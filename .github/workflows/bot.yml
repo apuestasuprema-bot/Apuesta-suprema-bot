@@ -1,1 +1,26 @@
+name: Apuesta Suprema Bot
 
+on:
+  workflow_dispatch:
+
+jobs:
+  enviar-mensaje:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Enviar mensaje a Telegram
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+          -d "chat_id=@apuestasupremax" \
+          --data-urlencode "text=👑 APUESTA SUPREMA
+
+🔥 ¡BOT CONECTADO CORRECTAMENTE!
+
+El sistema de Apuesta Suprema ya está funcionando. 🤖👑
+
+⚽ Pronósticos deportivos
+📊 Análisis
+🔥 Picks diarios
+💥 Súper Combinadas
+
+¡Vamos a por todo! 👑"
