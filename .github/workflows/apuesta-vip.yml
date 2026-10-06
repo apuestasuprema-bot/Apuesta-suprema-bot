@@ -14,4 +14,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
-          curl -s "https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=@apuestasupremax&text=%F0%9F%91%91%20APUESTA%20SUPREMA%20VIP%20%F0%9F%91%91%0A%0A%F0%9F%94%A5%20AHORA%20SOLO%20QUEDA%3A%0A%0A%E2%9C%85%20ACCEDER%0A%E2%9C%85%20COPIAR%0A%F0%9F%8E%AF%20SEGUIR%20LA%20ESTRATEGIA%0A%E2%99%BB%EF%B8%8F%20REPETIR%0A%0A%F0%9F%94%90%20ACCEDE%20AL%20VIP%20AQU%C3%8D%3A%0Ahttps%3A%2F%2Fstore.kunfupay.com%2Funpaisaenpalmademallorca-65931152-26feae19%2FQIvi1m5C
+          curl -s "https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=@apuestasupremax&text=%F0%9F%91%91%20APUESTA%20SUPREMA%20VIP%20%F0%9F%91%91%0A%0A%F0%9F%94%A5%20AHORA%20SOLO%20QUEDA%3A%0A%0A%E2%9C%85%20ACCEDER%0A%E2%9C%85%20COPIAR%0A%F0%9F%8E%AF%20SEGUIR%20LA%20ESTRATEGIA%0A%E2%99%BB%EF%B8%8F%20REPETIR%0A%0A%F0%9F%94%90%20ACCEDE%20AL%20VIP%20AQU%C3%8D%3A%0Ahttps%3A%2F%2Fstore.kunfupay.com%2Funpaisaenpalmademallorca-65931152-26feae19%2FQIvi1m5C"
