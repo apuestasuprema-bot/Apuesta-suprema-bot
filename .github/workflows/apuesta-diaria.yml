@@ -1,0 +1,15 @@
+name: Apuesta Diaria
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Publicar en Telegram
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          curl -s "https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=@apuestasupremax&text=%F0%9F%91%91%20APUESTA%20SUPREMA%0A%0A%F0%9F%94%A5%20S%C3%9APER%20COMBINADA%20DEL%20D%C3%8DA%0A%0A%E2%9A%BD%20Pron%C3%B3sticos%20deportivos%0A%F0%9F%93%8A%20An%C3%A1lisis%0A%F0%9F%92%A5%20S%C3%BAper%20Combinadas%0A%0A%F0%9F%91%91%20APUESTA%20SUPREMA"
