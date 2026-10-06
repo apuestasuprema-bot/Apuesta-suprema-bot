@@ -1,0 +1,12 @@
+name: Apuesta Suprema Bot
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Probar bot
+        run: echo "APUESTA SUPREMA BOT OK"
