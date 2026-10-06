@@ -4,14 +4,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  enviar-mensaje:
+  enviar:
     runs-on: ubuntu-latest
 
     steps:
       - name: Enviar mensaje a Telegram
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        run: |
-          curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-            -d "chat_id=@apuestasupremax" \
-            --data-urlencode "text=👑 APUESTA SUPREMA - BOT CONECTADO CORRECTAMENTE 🤖"
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: echo "Bot preparado"
