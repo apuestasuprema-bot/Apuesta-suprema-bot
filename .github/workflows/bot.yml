@@ -6,12 +6,8 @@ on:
 jobs:
   enviar:
     runs-on: ubuntu-latest
-
     steps:
       - name: Enviar mensaje a Telegram
         env:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        run: |
-          curl -s -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=@apuestasupremax" \
-            --data-urlencode "text=👑 APUESTA SUPREMA - BOT CONECTADO CORRECTAMENTE"
+        run: curl -s -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" -d "chat_id=@apuestasupremax" -d "text=APUESTA SUPREMA - BOT CONECTADO CORRECTAMENTE"
