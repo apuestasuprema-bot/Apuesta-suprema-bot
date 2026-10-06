@@ -13,5 +13,5 @@ jobs:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
           curl -s -X POST "https://api.telegram.org/bot${TOKEN}/sendMessage" \
-            -d "chat_id=@apuestasupremax" \
+            --data-urlencode "chat_id=@apuestasupremax" \
             --data-urlencode "text=👑 APUESTA SUPREMA - BOT CONECTADO CORRECTAMENTE"
