@@ -14,4 +14,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
-          curl -s "https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=@apuestasupremax&text=%F0%9F%91%91%20APUESTA%20SUPREMA%0A%0A%F0%9F%94%A5%20S%C3%9APER%20COMBINADA%20DEL%20D%C3%8DA%0A%0A%E2%9A%BD%20Pron%C3%B3sticos%20deportivos%0A%F0%9F%93%8A%20An%C3%A1lisis%0A%F0%9F%92%A5%20S%C3%BAper%20Combinadas%0A%0A%F0%9F%91%91%20APUESTA%20SUPREMA"
+         curl -s "https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=@apuestasupremax&text=%F0%9F%91%91%20APUESTA%20SUPREMA%20%F0%9F%91%91%0A%0A%F0%9F%94%A5%20S%C3%9APER%20COMBINADA%20DEL%20D%C3%8DA%20%F0%9F%94%A5%0A%0A%E2%9A%BD%20Pron%C3%B3sticos%20deportivos%0A%F0%9F%93%8A%20An%C3%A1lisis%20y%20estad%C3%ADsticas%0A%F0%9F%92%A5%20Selecci%C3%B3n%20de%20los%20mejores%20mercados%0A%F0%9F%8E%AF%20Una%20combinada%20preparada%20con%20estrategia%0A%0A%F0%9F%94%94%20ACTIVA%20LAS%20NOTIFICACIONES%20para%20no%20perderte%20nuestras%20publicaciones.%0A%0A%E2%9A%A1%20APUESTA%20SUPREMA%20%E2%9A%A1%0A%F0%9F%8E%AF%20Jugamos%20con%20estrategia.%20Buscamos%20valor."
