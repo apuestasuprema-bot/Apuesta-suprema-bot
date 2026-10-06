@@ -1,14 +1,10 @@
 name: Apuesta Suprema Bot
 
-on:
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
-  enviar:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Enviar mensaje a Telegram
-        env:
-          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        run: echo "Bot preparado"
+      - name: Probar bot
+        run: echo "Apuesta Suprema Bot OK"
